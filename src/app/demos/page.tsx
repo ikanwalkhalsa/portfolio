@@ -2,11 +2,25 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Eye, Brain, MessageSquare, Image, Code2, Zap } from 'lucide-react'
 import Link from 'next/link'
-import { fetchContent } from '@/lib/content'
+import * as yaml from 'js-yaml'
+import fs from 'fs'
+import path from 'path'
+
+// Function to load YAML content directly
+function loadYamlFile(filename: string): any {
+  try {
+    const contentDir = path.join(process.cwd(), 'content')
+    const filePath = path.join(contentDir, filename)
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    return yaml.load(fileContent)
+  } catch (error) {
+    console.error(`Error loading ${filename}:`, error)
+    return null
+  }
+}
 
 export default async function Demos() {
-  const content = await fetchContent()
-  const { demos: demosContent } = content
+  const demosContent = loadYamlFile('demos.yml')
   
   // Map YAML demo data to the component format
   const iconMap = {
