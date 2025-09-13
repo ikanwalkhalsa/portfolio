@@ -1,0 +1,45 @@
+title: "Explore More"
+subtitle: "Discover different aspects of my work and experience"
+pages:
+  - title: "About"
+    description: "Learn about my journey, background, and what drives me as an AI engineer. Discover my story, values, and the passion behind my work."
+    icon: "user"
+    href: "/about"
+    features: ["Background & Journey", "Core Values", "Personal Interests", "Career Philosophy"]
+    color: "blue"
+    show: true
+  - title: "Projects"
+    description: "Explore my portfolio of AI/ML projects, from computer vision applications to NLP systems. See real-world solutions I've built and the technologies I've mastered."
+    icon: "folder"
+    href: "/projects"
+    features: ["AI/ML Applications", "Computer Vision", "NLP Systems", "Full-Stack Solutions"]
+    color: "green"
+    show: true
+  - title: "Achievements"
+    description: "View my professional accomplishments, certifications, awards, and milestones. See the recognition and growth in my AI engineering career."
+    icon: "award"
+    href: "/achievements"
+    features: ["Certifications", "Awards & Recognition", "Career Milestones", "Skills Validation"]
+    color: "yellow"
+    show: true
+  - title: "Demos"
+    description: "Try out interactive AI demos and see my work in action. Experience computer vision, NLP, and machine learning models through hands-on demonstrations."
+    icon: "play"
+    href: "/demos"
+    features: ["Interactive Demos", "AI Models", "Real-time Processing", "Hands-on Experience"]
+    color: "purple"
+    show: true
+  - title: "Resume Chat"
+    description: "Chat with an AI assistant about my experience, skills, and projects. Ask questions and get detailed information about my background and capabilities."
+    icon: "message-circle"
+    href: "/resume-chat"
+    features: ["AI Assistant", "Interactive Q&A", "Detailed Information", "Smart Responses"]
+    color: "indigo"
+    show: true
+  - title: "Contact"
+    description: "Get in touch with me for opportunities, collaborations, or just to say hello. I'm always interested in discussing AI projects, career opportunities, or new ideas."
+    icon: "mail"
+    href: "/contact"
+    features: ["Direct Contact", "Career Opportunities", "Project Collaboration", "General Inquiries"]
+    color: "pink"
+    show: true

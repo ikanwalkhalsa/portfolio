@@ -1,0 +1,35 @@
+title: "About"
+subtitle: "From 8th Standard Coder to AI Engineer - A Journey of Innovation"
+sections:
+  bio:
+    title: "My Professional Journey"
+    content: "My coding journey began in 8th standard when I first discovered the magic of programming. What started as curiosity quickly became a passion that led me to participate in and win numerous coding competitions at both school and college levels. This early foundation in competitive programming shaped my problem-solving approach and technical depth. After completing my education, I transitioned into the professional world as a Machine Learning Engineer, where I've been building intelligent systems that solve real-world problems. My expertise spans computer vision, natural language processing, and scalable AI applications, with solutions that process millions of data points and achieve high accuracy rates across diverse domains. As an active professional on LinkedIn with 500+ connections, I continuously engage with the AI/ML community, sharing insights and collaborating on innovative projects."
+  expertise:
+    title: "Technical Expertise"
+    content: "I specialize in cutting-edge AI technologies and frameworks, with hands-on experience in building production-ready systems."
+    skills:
+      - "Generative AI & LLMs"
+      - "Vector Databases & RAG Systems"
+      - "Computer Vision & Object Detection"
+      - "Natural Language Processing"
+      - "Deep Learning & Neural Networks"
+      - "MLOps & Model Deployment"
+  achievements:
+    title: "Certifications & Awards"
+    content: "Recognition for technical excellence and impactful contributions to AI/ML field."
+    highlights:
+      - "Won 10+ coding competitions at school & college level"
+      - "Certified in ML, DL and Generative AI"
+      - "Recognition for building production-ready AI systems"
+      - "Contributions to various projects and communities"
+      - "Speaker at technical workshops"
+  projects:
+    title: "Notable Project Achievements"
+    content: "Delivering measurable impact through innovative AI solutions across diverse industries."
+    highlights:
+      - "UPC Detection System: Custom YOLO model for 8 product shapes with 10M+ indexed products"
+      - "Document Query Tool: Gen-AI system achieving 90% retrieval accuracy with sub-2s response"
+      - "Snowflake Query Generator: Automated QnA with ChromaDB and PaLM integration"
+      - "Telidenty Mobile App: 90% accuracy caller identification covering 70% Punjab smartphone users"
+      - "Advanced Home Security: 24 FPS CCTV management with real-time object tracking"
+      - "Vector Database Systems: 50M+ entries with FAISS and RAG implementations"

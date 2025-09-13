@@ -1,0 +1,70 @@
+title: "AI Demos"
+subtitle: "Interactive AI Applications"
+description: "Explore my AI-powered applications and see the technology in action. These demos showcase real implementations of computer vision, NLP, document processing, and other AI technologies."
+demos:
+  - id: "upc-detection"
+    title: "UPC Detection System"
+    description: "Advanced Image Recognition System with YOLO, OpenAI Embeddings, and FAISS"
+    status: "Coming Soon"
+    tech: ["YOLO", "OpenAI Embeddings", "FAISS", "TensorFlow Lite", "React Native"]
+    features:
+      - "Real-time product shape detection"
+      - "10M+ product vector database"
+      - "Mobile on-device inference"
+      - "8 distinct product classifications"
+    link: "/demos/upc-detection"
+  - id: "document-query-tool"
+    title: "Document Query Tool"
+    description: "Gen-AI driven document retrieval and question answering system"
+    status: "Coming Soon"
+    tech: ["FAISS", "Sentence Transformers", "LLaMa", "FastAPI", "React"]
+    features:
+      - "90% retrieval accuracy"
+      - "Sub-2 second response time"
+      - "Semantic document search"
+      - "Intelligent Q&A"
+    link: "/demos/document-query"
+  - id: "snowflake-query-generation"
+    title: "Snowflake Query Generator"
+    description: "Automated SQL query generation using ChromaDB and PaLM"
+    status: "Coming Soon"
+    tech: ["ChromaDB", "Hugging Face", "PaLM", "Snowflake", "FastAPI"]
+    features:
+      - "Natural language to SQL"
+      - "Context-aware query generation"
+      - "Sub-2 second response time"
+      - "Complex query automation"
+    link: "/demos/snowflake-query"
+  - id: "doc-processor-pdf-maker"
+    title: "Document Processor"
+    description: "Real-time document scanning with OCR and ML-based summarization"
+    status: "Coming Soon"
+    tech: ["Python", "OpenCV", "OCR", "Machine Learning", "Flask"]
+    features:
+      - "Real-time document scanning"
+      - "6+ layer processing"
+      - "Contact information extraction"
+      - "ML-based document summarization"
+    link: "/demos/doc-processor"
+  - id: "resume-feature-extractor"
+    title: "Resume Feature Extractor"
+    description: "NLP-based resume parsing with LSTM model for skill extraction"
+    status: "Coming Soon"
+    tech: ["Python", "SpaCy", "LSTM", "NLP", "Machine Learning"]
+    features:
+      - "10+ feature extraction"
+      - "LSTM-based skill detection"
+      - "40+ feature analysis"
+      - "Automated resume screening"
+    link: "/demos/resume-extractor"
+  - id: "ai-assistant"
+    title: "AI Assistant"
+    description: "Machine learning-based conversational bot with speech recognition"
+    status: "Coming Soon"
+    tech: ["Chatterbot", "PyTTSx3", "SpeechRecognition", "NLP", "Machine Learning"]
+    features:
+      - "Conversational AI"
+      - "Speech recognition"
+      - "Text-to-speech"
+      - "Customizable training"
+    link: "/demos/ai-assistant"

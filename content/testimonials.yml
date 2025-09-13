@@ -1,0 +1,18 @@
+title: "What People Say"
+subtitle: "Testimonials from colleagues, managers, and clients I've worked with"
+carousel:
+  autoRotate: true
+  interval: 5000
+  showDots: true
+  showArrows: true
+testimonials:
+  - name: "Placeholder Name"
+    title: "CEO"
+    company: "Placeholder Company"
+    content: "I have sent out a request to my contacts will be updating this section soon"
+    rating: 5
+    avatar: ""
+    linkedin: "https://linkedin.com/in/ikanwalkhalsa"
+    relationship: "Colleague"
+    relationshipContext: "Worked together on multiple projects"
+    show: true

@@ -1,0 +1,206 @@
+title: "Projects"
+subtitle: "A collection of AI/ML projects showcasing expertise in computer vision, NLP, data engineering, and software development"
+projects:
+  - id: "upc-detection"
+    title: "UPC Detection - Advanced Image Recognition System"
+    summary: "YOLO + OpenAI Embeddings + FAISS; 10M+ products, 8 distinct shapes, real-time mobile inference."
+    description: "An advanced Image Recognition System leveraging YOLO, OpenAI Embeddings, and FAISS for product identification. Custom-trained a YOLO model to accurately detect and classify 8 distinct product shapes, compiled and indexed a high-scale vector store comprising over 10 million unique products and 50 million total entries, and integrated a real-time mobile application for instant shelf product identification using on-device inference."
+    problem: "Need for accurate product identification in retail environments with massive product catalogs and real-time mobile processing requirements."
+    solution: "Developed a comprehensive system combining custom YOLO models for shape detection, OpenAI embeddings for product similarity, and FAISS for efficient vector search across millions of products."
+    impact: "Achieved high accuracy in product shape detection, enabled real-time product identification on mobile devices, and scaled to handle 10M+ unique products with 50M+ total entries."
+    stack: ["Python", "YOLO", "OpenAI Embeddings", "FAISS", "TensorFlow Lite", "React Native", "FastAPI"]
+    technologies: ["Computer Vision", "Object Detection", "Vector Search", "Mobile AI", "Product Recognition"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/upc-detection"
+      demo: "/demos#vision"
+    status: "completed"
+    date: "2024-02-15"
+    duration: "4 months"
+    team: "Lead ML Engineer"
+    
+  - id: "document-query-tool"
+    title: "Document Query Tool - Gen-AI Driven System"
+    summary: "FAISS + Sentence Transformers + LLaMa; 90% retrieval accuracy, sub-2 second response time."
+    description: "A Gen-AI driven system using FAISS, Sentence Transformers and LLaMa to automate document retrieval and question answering. Achieved 90% retrieval accuracy using cosine similarity-based vector search in FAISS and real-time response under 2 seconds."
+    problem: "Traditional document search systems lacked semantic understanding and were too slow for real-time querying of large document collections."
+    solution: "Implemented a Gen-AI system combining FAISS for efficient vector storage, Sentence Transformers for semantic embeddings, and LLaMa for intelligent question answering."
+    impact: "Achieved 90% retrieval accuracy with sub-2 second response times, dramatically improved document search and question answering capabilities."
+    stack: ["Python", "FAISS", "Sentence Transformers", "LLaMa", "FastAPI", "React", "PostgreSQL"]
+    technologies: ["RAG", "Vector Search", "Semantic Understanding", "Document Processing", "Gen-AI"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/document-query-tool"
+      demo: "/demos#rag"
+    status: "completed"
+    date: "2024-03-05"
+    duration: "2.5 months"
+    team: "Lead ML Engineer"
+    
+  - id: "snowflake-query-generation"
+    title: "Snowflake Query-Generation Tool"
+    summary: "ChromaDB + Hugging Face + PaLM; sub-2 second response time for complex query generation."
+    description: "Automated QnA using ChromaDB, Hugging Face Encoding and PaLM for Snowflake query generation and running. Achieved sub-2 second response time for context-aware complex query generation by question-query vectors from ChromaDB."
+    problem: "Complex Snowflake query generation was time-consuming and required deep SQL expertise, limiting data access for business users."
+    solution: "Built an automated system using ChromaDB for vector storage, Hugging Face for encoding, and PaLM for intelligent query generation."
+    impact: "Reduced query generation time to under 2 seconds, democratized access to complex Snowflake queries, improved data accessibility for non-technical users."
+    stack: ["Python", "ChromaDB", "Hugging Face", "PaLM", "Snowflake", "FastAPI", "React"]
+    technologies: ["SQL Generation", "Vector Databases", "Natural Language Processing", "Data Analytics"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/snowflake-query-generation"
+      demo: "/demos#sql-gen"
+    status: "completed"
+    date: "2023-12-15"
+    duration: "2 months"
+    team: "Solo project"
+    
+  - id: "telidenty"
+    title: "Telidenty - Mobile Caller Identification"
+    summary: "Mobile App with 90% caller identification accuracy and mutual contacts display for enhanced call management."
+    description: "Mobile App providing accurate caller identification with 90% accuracy and mutual contacts display for enhanced call management. Gathered Data for 70% smartphone users in Punjab from publicly available sources."
+    problem: "Unknown caller identification was a major pain point for mobile users, with limited information available about incoming calls."
+    solution: "Developed a comprehensive mobile application with advanced caller identification capabilities and mutual contact detection."
+    impact: "Achieved 90% caller identification accuracy, covered 70% of smartphone users in Punjab, significantly improved call management experience."
+    stack: ["React Native", "Node.js", "MongoDB", "APIs", "Data Scraping", "Android", "iOS"]
+    technologies: ["Mobile Development", "Caller ID", "Data Collection", "Contact Management"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/telidenty"
+      demo: null
+    status: "completed"
+    date: "2023-09-10"
+    duration: "3 months"
+    team: "Mobile Developer"
+    
+  - id: "advanced-home-security"
+    title: "Advanced Home Security System"
+    summary: "CCTV management system at 24 FPS with real-time insights, object tracking, and automated camera movement."
+    description: "A comprehensive CCTV management system that works at 24 FPS enabling real-time insights and object tracking with automated camera movement for advanced home security applications."
+    problem: "Traditional home security systems lacked intelligent monitoring, real-time object tracking, and automated camera control capabilities."
+    solution: "Developed an advanced security system with high-frame-rate processing, intelligent object tracking, and automated camera movement features."
+    impact: "Enabled 24 FPS real-time monitoring, improved security through automated camera movement, enhanced object tracking capabilities for better threat detection."
+    stack: ["Python", "OpenCV", "Computer Vision", "Raspberry Pi", "Cameras", "IoT", "Real-time Processing"]
+    technologies: ["Computer Vision", "Object Tracking", "Real-time Processing", "IoT", "Security Systems"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/advanced-home-security"
+      demo: null
+    status: "completed"
+    date: "2023-05-20"
+    duration: "2.5 months"
+    team: "Solo project"
+    
+  - id: "doc-processor-pdf-maker"
+    title: "Doc Processor – PDF Maker"
+    summary: "Real-time document scanning with OCR, regex extraction, and ML-based document summarization."
+    description: "Built using Python, Flask, JavaScript, HTML/CSS, OpenCV. Scan and detect documents from each frame by processing 6+ layers in real-time using OpenCV in Python. Understands phone numbers and emails using regex-python after OCR and gives an option to call or email directly. Summarizes 5+ page documents into one using machine learning and natural language processing techniques."
+    problem: "Manual document processing was time-consuming and error-prone, with no intelligent extraction of contact information or document summarization."
+    solution: "Developed a comprehensive document processing system with real-time scanning, OCR, regex-based information extraction, and ML-powered summarization."
+    impact: "Automated document scanning and processing, enabled direct contact actions from extracted information, reduced document reading time through intelligent summarization."
+    stack: ["Python", "Flask", "JavaScript", "HTML/CSS", "OpenCV", "OCR", "Regex", "Machine Learning"]
+    technologies: ["Document Processing", "OCR", "Information Extraction", "Document Summarization", "Real-time Processing"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/doc-processor"
+      demo: null
+    status: "completed"
+    date: "2021-05-01"
+    duration: "3 years (ongoing)"
+    team: "Solo project"
+    
+  - id: "path-finding-visualizer"
+    title: "Path-Finding Visualizer"
+    summary: "Interactive pathfinding algorithm visualization using A* algorithm with pygame."
+    description: "Created a pathfinding visualizer using Python and Pygame. FORMULA USED: t(x) = s(x) + e(x). The Goal is to Minimize t(x) where x is the current spot, t(x) is the total distance of the path including x from start to end, s(x) is the distance from start to current, and e(x) is the shortest distance from current to end. s(x) is calculated by counting the number of squares from start to current, e(x) is the shortest distance between current and end calculated using Euclidean distance formula."
+    problem: "Need for visual understanding of pathfinding algorithms and their optimization strategies."
+    solution: "Implemented an interactive visualization system using Python and Pygame to demonstrate A* pathfinding algorithm with real-time visualization."
+    impact: "Enhanced understanding of pathfinding algorithms, provided educational tool for algorithm visualization, demonstrated practical implementation of A* algorithm."
+    stack: ["Python", "Pygame", "Algorithms", "Visualization"]
+    technologies: ["Algorithm Visualization", "Pathfinding", "Game Development", "A* Algorithm"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/path-finding-visualizer"
+      demo: null
+    status: "completed"
+    date: "2020-07-01"
+    duration: "1 month"
+    team: "Solo project"
+    
+  - id: "resume-feature-extractor"
+    title: "Resume Feature Extractor"
+    summary: "NLP-based resume parsing with LSTM model for skill extraction from 40+ features."
+    description: "Built using Python, SpaCy, Regex. Extracts 10+ features from passed resume using regex and NLP-based Python modules like SpaCy and re. Consists of an LSTM-based model for skill extraction which analyzes 40+ features of already filtered words by NLP and tells if it is a skill or not. Associated with Preminds Solutions."
+    problem: "Manual resume screening was time-consuming and inconsistent, requiring automated extraction of key information and skills from resumes."
+    solution: "Developed an intelligent resume parsing system combining regex patterns, NLP processing with SpaCy, and LSTM-based skill classification."
+    impact: "Automated resume screening process, improved accuracy in skill extraction, reduced manual effort in candidate evaluation."
+    stack: ["Python", "SpaCy", "Regex", "LSTM", "NLP", "Machine Learning"]
+    technologies: ["NLP", "Resume Parsing", "Skill Extraction", "LSTM", "Text Processing"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/resume-feature-extractor"
+      demo: null
+    status: "completed"
+    date: "2020-06-01"
+    duration: "1.5 months"
+    team: "Associated with Preminds Solutions"
+    
+  - id: "ai-assistant"
+    title: "AI-Assistant"
+    summary: "Machine learning-based conversational bot with speech recognition and text-to-speech capabilities."
+    description: "A machine learning-based bot created using Chatterbot, PyTTSx3, SpeechRecognition modules which has basic training and talks with you. By changing the dataset provided, you can train this bot even better and can add further functionality. It is essentially the speaking version of a Chat-Bot."
+    problem: "Need for an interactive AI assistant that could communicate through both text and speech for enhanced user experience."
+    solution: "Developed a conversational AI system combining Chatterbot for natural language processing, speech recognition for voice input, and text-to-speech for voice output."
+    impact: "Created an interactive AI assistant with multi-modal communication capabilities, demonstrated practical implementation of conversational AI."
+    stack: ["Python", "Chatterbot", "PyTTSx3", "SpeechRecognition", "Machine Learning", "NLP"]
+    technologies: ["Conversational AI", "Speech Recognition", "Text-to-Speech", "Natural Language Processing"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/ai-assistant"
+      demo: null
+    status: "completed"
+    date: "2020-06-01"
+    duration: "1 month"
+    team: "Solo project"
+    
+  - id: "hotel-management"
+    title: "Hotel-Management System"
+    summary: "Multi-user hotel management system with role-based access control and comprehensive logging."
+    description: "Hotel Management System created for a client at Fiverr using Kivy module and SQLite3 as the database. It handles 3 types of users: Guest, Employee, Admin, each having different functionality with admin being the most powerful. A guest can only place a food order and check their history, an employee can check-in and check out guests and search for room numbers, while admin can do all that along with searching employee IDs and checking room availability. The highlight feature is that admin can view logs of application showing each activity performed by every user."
+    problem: "Manual hotel management processes were inefficient and lacked proper role-based access control and activity tracking."
+    solution: "Developed a comprehensive hotel management system with role-based access control, automated booking management, and detailed activity logging."
+    impact: "Streamlined hotel operations, improved customer service through automated processes, enhanced security through role-based access and activity logging."
+    stack: ["Python", "Kivy", "SQLite3", "Database Design", "GUI Development"]
+    technologies: ["Database Management", "Role-based Access Control", "Activity Logging", "Hotel Management", "GUI Development"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/hotel-management"
+      demo: null
+    status: "completed"
+    date: "2020-05-01"
+    duration: "1 month"
+    team: "Fiverr Client Project"
+    
+  - id: "jet-game"
+    title: "Jet Game"
+    summary: "2D airplane shooting game built with Python and Pygame featuring enemy combat and bullet mechanics."
+    description: "A game based on Python and Pygame module featuring an airplane and a bunch of enemies which you have to kill by bullets and clear your way. Classic arcade-style shooting game with smooth gameplay mechanics."
+    problem: "Need for an engaging 2D game to demonstrate game development skills and Pygame proficiency."
+    solution: "Developed a complete 2D shooting game with player aircraft, enemy spawning, collision detection, and scoring system."
+    impact: "Demonstrated game development capabilities, showcased Pygame expertise, created an entertaining interactive experience."
+    stack: ["Python", "Pygame", "Game Development", "2D Graphics"]
+    technologies: ["Game Development", "2D Graphics", "Collision Detection", "Game Mechanics"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/jet-game"
+      demo: null
+    status: "completed"
+    date: "2020-03-01"
+    duration: "1 month"
+    team: "Solo project"
+    
+  - id: "crypto-mail"
+    title: "Crypto-Mail"
+    summary: "Advanced text encryption system with time-based password validation and dynamic encoding patterns."
+    description: "Cryptomail is a sophisticated algorithm that encodes or decodes entered text and mails it. It has unique features like passwords for encoded messages are valid only for one day, and encoding pattern changes after each encode with each day having its own 90k possibilities. Another cool feature is that even in the same string, same characters will not have the same encode. For example, if you enter 'aaa', its encoded version will be something like '#j1u' and not '###' or '111' or 'uuu' etc."
+    problem: "Need for secure communication with time-based encryption and dynamic encoding patterns to prevent pattern recognition attacks."
+    solution: "Developed an advanced encryption system with daily changing encoding patterns, time-based password validation, and character-level randomization."
+    impact: "Enhanced message security through dynamic encryption, prevented pattern recognition attacks, implemented time-based access control for encrypted messages."
+    stack: ["Python", "Encryption", "Email Integration", "Time-based Security"]
+    technologies: ["Cryptography", "Security", "Email Systems", "Dynamic Encoding"]
+    links:
+      repo: "https://github.com/ikanwalkhalsa/crypto-mail"
+      demo: null
+    status: "completed"
+    date: "2020-01-01"
+    duration: "1 month"
+    team: "Solo project"

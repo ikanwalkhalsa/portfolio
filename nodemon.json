@@ -1,0 +1,7 @@
+{
+  "watch": ["content"],
+  "ext": "yml",
+  "ignore": ["node_modules", ".next"],
+  "exec": "node scripts/refresh-browser.js",
+  "verbose": true
+}

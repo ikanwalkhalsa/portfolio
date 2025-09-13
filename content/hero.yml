@@ -1,0 +1,21 @@
+greeting: "Hi, I'm"
+name: "Kanwalpreet Singh"
+title: "AI Engineer & Innovator"
+subtitle: "Transforming Ideas into Intelligent Solutions"
+description: "Passionate about creating intelligent systems that solve real-world problems. Specializing in Generative AI, Computer Vision, Backend, NLP, and scalable AI applications."
+cta:
+  primary: "View My Work"
+  secondary: "Get In Touch"
+image: "/profile-image.png"
+stats:
+  showLeetCode: false
+  customStats:
+    - label: "Work Experience"
+      value: "5+"
+      show: true
+    - label: "Coding Experience"
+      value: "11+"
+      show: true
+    - label: "Competitive Coding Wins"
+      value: "10+"
+      show: true
