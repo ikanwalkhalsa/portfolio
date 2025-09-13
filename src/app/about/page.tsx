@@ -79,7 +79,7 @@ export default async function About() {
               </h2>
               <div className="space-y-4">
                 <p className="text-gray-600 mb-4">{about.sections.achievements.content}</p>
-                {about.sections.achievements.highlights.map((highlight, index) => (
+                {about.sections.achievements.highlights.map((highlight: any, index: number) => (
                   <div key={index} className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                     <div className="text-gray-600">{highlight}</div>
@@ -100,7 +100,7 @@ export default async function About() {
                 <div className="space-y-4">
                   <p className="text-gray-600 mb-6">{about.sections.projects.content}</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {about.sections.projects.highlights.map((highlight, index) => (
+                    {about.sections.projects.highlights.map((highlight: any, index: number) => (
                       <div key={index} className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <div className="text-gray-700 text-sm">{highlight}</div>
@@ -118,7 +118,7 @@ export default async function About() {
             <div className="bg-white rounded-lg p-8 shadow-sm mb-8">
               <p className="text-gray-600 text-center mb-6">{about.sections.expertise.content}</p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {about.sections.expertise.skills.map((skill, index) => (
+                {about.sections.expertise.skills.map((skill: any, index: number) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
                     <span className="text-sm font-medium text-gray-700">{skill}</span>
                   </div>
