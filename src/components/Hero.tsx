@@ -2,13 +2,29 @@ import React from 'react'
 import { Github, Linkedin, Mail, Phone, Rocket, Code } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { fetchContent, fetchLeetCodeStats } from '@/lib/content'
+import { fetchLeetCodeStats } from '@/lib/content'
 import AnimatedCounter from './AnimatedCounter'
+import * as yaml from 'js-yaml'
+import fs from 'fs'
+import path from 'path'
+
+// Function to load YAML content directly
+function loadYamlFile(filename: string): any {
+  try {
+    const contentDir = path.join(process.cwd(), 'content')
+    const filePath = path.join(contentDir, filename)
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    return yaml.load(fileContent)
+  } catch (error) {
+    console.error(`Error loading ${filename}:`, error)
+    return null
+  }
+}
 
 const Hero = async () => {
-  const content = await fetchContent()
+  const hero = loadYamlFile('hero.yml')
+  const contact = loadYamlFile('contact.yml')
   const leetCodeStats = await fetchLeetCodeStats()
-  const { hero, contact } = content
   
   // Add timestamp to force re-rendering in development
   const timestamp = process.env.NODE_ENV === 'development' ? Date.now() : ''
