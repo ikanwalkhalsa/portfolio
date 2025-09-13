@@ -1,71 +1,13 @@
 import { NextResponse } from 'next/server'
 import { logger } from '@/lib/logger'
 import { config } from '@/lib/config'
-
-// Simple in-memory metrics storage
-// In production, you'd want to use a proper metrics service like Prometheus, DataDog, etc.
-const metrics = {
-  requests: {
-    total: 0,
-    successful: 0,
-    failed: 0,
-  },
-  responseTime: {
-    total: 0,
-    count: 0,
-    average: 0,
-  },
-  errors: {
-    total: 0,
-    byType: {} as Record<string, number>,
-  },
-  memory: {
-    peak: 0,
-    current: 0,
-  },
-  uptime: {
-    start: Date.now(),
-  },
-}
-
-export function updateMetrics(type: 'request' | 'response' | 'error', data?: any) {
-  switch (type) {
-    case 'request':
-      metrics.requests.total++
-      if (data?.success) {
-        metrics.requests.successful++
-      } else {
-        metrics.requests.failed++
-      }
-      break
-    
-    case 'response':
-      if (data?.responseTime) {
-        metrics.responseTime.total += data.responseTime
-        metrics.responseTime.count++
-        metrics.responseTime.average = metrics.responseTime.total / metrics.responseTime.count
-      }
-      break
-    
-    case 'error':
-      metrics.errors.total++
-      const errorType = data?.type || 'unknown'
-      metrics.errors.byType[errorType] = (metrics.errors.byType[errorType] || 0) + 1
-      break
-  }
-
-  // Update memory metrics
-  const memUsage = process.memoryUsage()
-  metrics.memory.current = Math.round(memUsage.heapUsed / 1024 / 1024)
-  if (metrics.memory.current > metrics.memory.peak) {
-    metrics.memory.peak = metrics.memory.current
-  }
-}
+import { getMetrics, formatUptime } from '@/lib/metrics'
 
 export async function GET() {
   const startTime = Date.now()
   
   try {
+    const metrics = getMetrics()
     const currentTime = Date.now()
     const uptime = currentTime - metrics.uptime.start
     
@@ -147,19 +89,3 @@ export async function GET() {
   }
 }
 
-function formatUptime(ms: number): string {
-  const seconds = Math.floor(ms / 1000)
-  const minutes = Math.floor(seconds / 60)
-  const hours = Math.floor(minutes / 60)
-  const days = Math.floor(hours / 24)
-
-  if (days > 0) {
-    return `${days}d ${hours % 24}h ${minutes % 60}m ${seconds % 60}s`
-  } else if (hours > 0) {
-    return `${hours}h ${minutes % 60}m ${seconds % 60}s`
-  } else if (minutes > 0) {
-    return `${minutes}m ${seconds % 60}s`
-  } else {
-    return `${seconds}s`
-  }
-}

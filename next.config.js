@@ -13,9 +13,9 @@ const nextConfig = {
     ignoreBuildErrors: process.env.NODE_ENV === 'production',
   },
 
-  // ESLint configuration
+  // ESLint configuration - linting enabled during builds
   eslint: {
-    ignoreDuringBuilds: process.env.NODE_ENV === 'production',
+    ignoreDuringBuilds: false,
   },
 
   // Image optimization
