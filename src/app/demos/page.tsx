@@ -41,7 +41,7 @@ export default async function Demos() {
     'voice-assistant': 'from-teal-500 to-blue-500'
   }
   
-  const demos = (demosContent.demos || []).map(demo => ({
+  const demos = (demosContent.demos || []).map((demo: any) => ({
     ...demo,
     icon: iconMap[demo.id as keyof typeof iconMap] || Eye,
     gradient: gradientMap[demo.id as keyof typeof gradientMap] || 'from-blue-500 to-cyan-500',
@@ -78,7 +78,7 @@ export default async function Demos() {
 
           {/* Demos Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {demos.length > 0 ? demos.map((demo) => (
+            {demos.length > 0 ? demos.map((demo: any) => (
               <div 
                 key={demo.id}
                 className={`bg-white rounded-lg p-8 shadow-sm border-2 transition-all duration-300 hover:shadow-lg ${
@@ -109,7 +109,7 @@ export default async function Demos() {
                 <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-700 mb-2">Tech Stack</h4>
                   <div className="flex flex-wrap gap-2">
-                    {demo.tech.map((tech, index) => (
+                    {demo.tech.map((tech: string, index: number) => (
                       <span 
                         key={index}
                         className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium"
@@ -124,7 +124,7 @@ export default async function Demos() {
                 <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-700 mb-2">Features</h4>
                   <ul className="space-y-1">
-                    {demo.features.map((feature, index) => (
+                    {demo.features.map((feature: string, index: number) => (
                       <li key={index} className="flex items-center text-sm text-gray-600">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
                         {feature}
