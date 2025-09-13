@@ -1,10 +1,48 @@
 import React from 'react'
 import { Code, TrendingUp, Award, Zap, Target, Trophy } from 'lucide-react'
-import { fetchLeetCodeStats } from '@/lib/content'
 import AnimatedCounter from './AnimatedCounter'
 
 const LeetCodeSection = async () => {
-  const leetCodeStats = await fetchLeetCodeStats()
+  // Direct API call to fetch LeetCode stats
+  let leetCodeStats = null
+  
+  try {
+    const response = await fetch('https://leetcode-stats-api.herokuapp.com/kanwalpreetsingh', {
+      next: { revalidate: 3600 } // Cache for 1 hour
+    })
+    
+    if (response.ok) {
+      const data = await response.json()
+      leetCodeStats = {
+        totalSolved: data.totalSolved || 0,
+        totalQuestions: data.totalQuestions || 0,
+        acceptanceRate: `${(data.acceptanceRate || 0).toFixed(2)}%`,
+        ranking: data.ranking || 0,
+        contributionPoints: data.contributionPoints || 0,
+        reputation: data.reputation || 0,
+        easySolved: data.easySolved || 0,
+        mediumSolved: data.mediumSolved || 0,
+        hardSolved: data.hardSolved || 0
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching LeetCode stats:', error)
+  }
+  
+  // Fallback to default stats if API fails
+  if (!leetCodeStats) {
+    leetCodeStats = {
+      totalSolved: 1250,
+      totalQuestions: 2800,
+      acceptanceRate: "90%+",
+      ranking: 50000,
+      contributionPoints: 100,
+      reputation: 100,
+      easySolved: 400,
+      mediumSolved: 700,
+      hardSolved: 150
+    }
+  }
 
   const stats = [
     {
