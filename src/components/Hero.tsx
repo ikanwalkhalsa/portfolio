@@ -90,7 +90,7 @@ const Hero = async () => {
                   </div>
                 </>
               ) : (
-                hero.stats?.customStats?.filter(stat => stat.show).map((stat, index) => (
+                hero.stats?.customStats?.filter((stat: any) => stat.show).map((stat: any, index: number) => (
                   <div key={index} className="text-center">
                     <div className="text-3xl font-bold text-primary">
                       <AnimatedCounter 
