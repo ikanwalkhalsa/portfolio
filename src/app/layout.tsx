@@ -60,7 +60,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.linkedin.com" />
         
         {/* Performance hints */}
-        <link rel="preload" href="/profile-image.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/profile-image.png" as="image" type="image/png" />
       </head>
       <body className={inter.className}>
         {children}

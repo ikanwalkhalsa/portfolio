@@ -6,7 +6,7 @@ description: "Passionate about creating intelligent systems that solve real-worl
 cta:
   primary: "View My Work"
   secondary: "Get In Touch"
-image: "/profile-image.jpg"
+image: "/profile-image.png"
 stats:
   showLeetCode: false
   customStats:
