@@ -31,8 +31,9 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 }
 
@@ -59,7 +60,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.linkedin.com" />
         
         {/* Performance hints */}
-        <link rel="preload" href="/profile-image.png" as="image" type="image/png" />
+        <link rel="preload" href="/profile-image.jpg" as="image" type="image/jpeg" />
       </head>
       <body className={inter.className}>
         {children}
